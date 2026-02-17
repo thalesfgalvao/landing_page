@@ -9,7 +9,7 @@ export const footer = styled('footer')({
     flexDirection: 'column',
     backgroundColor: 'var(--surface-color)',
     alignItems: 'center',
-    color: 'var(--text-primary)',
+    color: 'var(--text-secondary)',
     fontWeight: '600',
     fontSize: '1.2rem',
 })
