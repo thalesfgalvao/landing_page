@@ -1,8 +1,10 @@
 import { styled } from "@mui/material/styles";
 
 export const footer = styled('footer')({
-    width: '100%',
-    padding: '1rem',
+    textAlign: 'center',
+    justifyContent: 'center',
+    gridColumn: '1/4',
+    gridRow: '3',
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: 'var(--surface-color)',
@@ -10,7 +12,4 @@ export const footer = styled('footer')({
     color: 'var(--text-primary)',
     fontWeight: '600',
     fontSize: '1.2rem',
-    position: 'fixed',
-    bottom: 0,
-    left: 0,
 })
