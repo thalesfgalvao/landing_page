@@ -1,11 +1,19 @@
 import { styled } from '@mui/material/styles';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 interface INavElement {
   pos?: 'left' | 'center' | 'right';
-  size?: 'small' | 'medium' | 'huge';
   column?: string ;
   row?: string ;
 }
+
+export const Icon = styled(Logo)({
+  width: '64px',
+  height: '64px',
+  '& path': {
+    fill: 'var(--text-primary)',
+  },
+});
 
 export const Nav = styled('nav')({
     display: 'flex',
@@ -19,6 +27,8 @@ export const NavElements = styled('div')<INavElement> ({
     gridTemplateColumns: '1fr 10fr 1fr',
     width: '100%',
     gap: '2rem',
+    backgroundColor: 'var(--surface-color)',
+    boxShadow: 'var(--border-color) 0px 4px;',
   });
 
 export const NavElement = styled('div')<INavElement>(
@@ -29,8 +39,6 @@ export const NavElement = styled('div')<INavElement>(
     flexDirection: 'row',
     padding: '0.5rem',
     gap: '5rem',
-    backgroundColor: 'var(--surface-color)',
-    boxShadow: 'var(--border-color) 0px 4px;',
     gridColumn: column,
     gridRow: row,
 
