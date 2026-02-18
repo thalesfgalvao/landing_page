@@ -1,5 +1,7 @@
+import { PagesWrapper } from '../components/PagesWrapper';
 import { Footer } from '../components/Footer';
 import { Navigator } from '../components/Navigator';
+import { NotFoundPage } from '../Pages/NotFound';
 import * as S from './styles';
 
 interface IMainTemplate {
@@ -9,7 +11,9 @@ interface IMainTemplate {
 export const MainTemplate = ({ children }: IMainTemplate) => {
     return <S.Wrapper>
         <Navigator />
-        {children}
+        <PagesWrapper>
+            {children ? children : <NotFoundPage />}
+        </PagesWrapper>
         <Footer />
     </S.Wrapper>
 }

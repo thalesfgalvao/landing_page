@@ -9,6 +9,10 @@
   --text-secondary: #475569;
 
   --border-color: #E2E8F0;
+
+  --textSize-small: '1.2rem',
+  --textSize-medium: '1.6rem',
+  --textSize-huge: '2.4rem',
 }
 
 [data-theme='dark'] {
@@ -22,9 +26,8 @@
   --text-secondary: #94A3B8;
 
   --border-color: #1F2933;
-}
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-primary);
+  --textSize-small: '1.2rem',
+  --textSize-medium: '1.6rem',
+  --textSize-huge: '2.4rem',
 }
