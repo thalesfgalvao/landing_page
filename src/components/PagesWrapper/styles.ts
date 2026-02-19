@@ -9,6 +9,5 @@ export const Wrapper = styled('div')({
     WebkitBorderRadius: '0.5rem',
     gridColumn: '2/3',
     gridRow: '2/3',
-    justifyContent: 'center'
 })
 
