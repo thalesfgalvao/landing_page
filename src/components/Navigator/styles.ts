@@ -48,7 +48,7 @@ export const NavElement = styled('div')<INavElement>(
 export const MenuOption = styled('span')({
     position: 'relative',
     cursor: 'pointer',
-    transition: 'transform 0.2s ease',
+    transition: '0.5s',
     padding: '1rem',
     WebkitBorderRadius: '1rem',
     color: 'var(--text-primary)',    
@@ -56,11 +56,10 @@ export const MenuOption = styled('span')({
     fontWeight: '600',
 
     '&:hover': {
-        backgroundColor: 'var(--primary-hover)',
+        boxShadow: 'var(--primary-hover) 0px 10px 10px -10px',
         cursor: 'pointer',
-        transition: '1s',
+        transition: '0.5s',
         fontSize: 'scale(1.1)',
-        boxShadow: 'none',
         color: 'var(--text-primary)',
     }
 })
